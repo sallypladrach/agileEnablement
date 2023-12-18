@@ -7,7 +7,7 @@ function createCaseStudyPresentation() {
   var requesterEmailColumn = 2; // Assuming email of the person making the request is in the third column (index 1)
   var clientNameColumn = 3; // Assuming project type is in the second column (index 1)
   var technologiesColumn = 4; // Assuming project type is in the second column (index 1)
-    var companyNameColumn = 3; // Assuming project type is in the second column (index 1)
+    var companyNameColumn = 3; // Assuming project type is in the second column (index 3)
 
   var sourcePresentationId = 'XXXXXXXXXXX'; // Replace with your source presentation ID
   var sourcePresentation = SlidesApp.openById(sourcePresentationId);
