@@ -21,4 +21,6 @@ or contect slide) should have "all" in the notes.
 
 7. The names of the variables are from my own project, but you can adjust them to fit your form if you want, just be sure to change the variable names throughout your code to match.
 
-8. Ensure there's at least one row of data in your form, and run the script to test it out. If you need help or would like to help me make this more user-friendly by letting me watch you set it up, reach out to me here or on [LinkedIn](https://www.linkedin.com/in/sallyladrach/)
+8. Remember to set up your triggers in Google app scripts to run the script each time a new row is added to the sheet.  
+
+9. Ensure there's at least one row of data in your form, and run the script to test it out. If you need help or would like to help me make this more user-friendly by letting me watch you set it up, reach out to me here or on [LinkedIn](https://www.linkedin.com/in/sallyladrach/)
