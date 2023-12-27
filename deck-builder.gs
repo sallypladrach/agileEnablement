@@ -1,7 +1,7 @@
 function createCaseStudyPresentation() {
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("NAME OF YOUR SHEET"); // Replace with your sheet name
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("NAME OF YOUR SHEET"); // Replace with your sheet name of where the form responses will land
     var data = sheet.getDataRange().getValues();
-  var lastRow = sheet.getLastRow();
+  var lastRow = sheet.getLastRow(); // this is what tells the script to only create a deck for the last row of the sheet
   var row = data[lastRow-1]
   var projectTypeColumn = 1; // Assuming project type is in the second column (index 1)
   var requesterEmailColumn = 2; // Assuming email of the person making the request is in the third column (index 1)
@@ -14,11 +14,11 @@ function createCaseStudyPresentation() {
   var sourceSlides = sourcePresentation.getSlides();
 
 
-  var projectType = row[projectTypeColumn];
-  var clientName = row[clientNameColumn];
+  var projectType = row[projectTypeColumn]; // this variable supports a single option, like a choice in a drop down
+  var clientName = row[clientNameColumn]; 
   var requesterEmail = row[requesterEmailColumn];
-  var companyName = row[companyNameColumn];
-  var technologiesArray = row[technologiesColumn].split(", ");
+  var companyName = row[companyNameColumn]; // this is for free-written text
+  var technologiesArray = row[technologiesColumn].split(", "); // this variable supports a multi-select form field
 
   var newPresentation = SlidesApp.create(`${projectType} - ${clientName}`);
 
